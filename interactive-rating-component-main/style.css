@@ -84,6 +84,10 @@ p {
   cursor: pointer
 }
 
+.score.selected {
+  background-color: var(--Orange);
+}
+
 .score:hover {
   background-color: var(--Light-Grey);
 }
