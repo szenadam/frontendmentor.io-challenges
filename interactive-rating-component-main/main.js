@@ -1,5 +1,4 @@
 const submit = document.getElementById("submit");
-const thankyouSection = document.getElementById("thankyou");
 
 // 
 const scores = document.querySelectorAll(".score");
@@ -11,3 +10,10 @@ scores.forEach((scoreElement) => {
     scoreElement.classList.add("selected");
   });
 });
+
+function onSubmit() {
+  const startState = document.getElementById("start-state");
+  const thankyouSection = document.getElementById("thankyou");
+  startState.style.display = 'none';
+  thankyouSection.style.display = 'block';
+}
