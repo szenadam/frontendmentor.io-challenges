@@ -3,9 +3,8 @@
     border-radius: 1rem;
     width: 600px;
     height: 450px;
-    margin: auto;
     display: flex;
-    margin-top: 5rem;
+    margin: 5rem auto auto;
 }
 
 .card-image img {
@@ -34,7 +33,7 @@
     font-weight: 700;
     font-family: Fraunces, serif;
     line-height: 32px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .description {
@@ -48,7 +47,6 @@
 .prices {
     display: flex;
     margin-bottom: 2rem;
-    justify-content: center;
     align-items: center;
 }
 
@@ -56,12 +54,14 @@
     color: #3D8168;
     font-family: Fraunces, serif;
     font-size: 32px;
+    margin-right: 1.5rem;
 }
 
 .original-price {
     font-family: Montserrat, sans-serif;
     font-size: 13px;
     text-decoration: line-through;
+    color: #6C7289;
 }
 
 .add-to-cart-btn {
@@ -74,4 +74,24 @@
     font-family: Montserrat, sans-serif;
     font-weight: 700;
     font-size: 14px;
+}
+
+.btn-svg {
+    margin-right: 0.3rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.btn-text {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.add-to-cart-btn img {
+    vertical-align: middle;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #1A4032;
+    cursor: pointer;
 }

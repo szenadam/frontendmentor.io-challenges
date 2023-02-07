@@ -1,5 +1,6 @@
 import './App.css'
 import desktopImage from './assets/image-product-desktop.jpg'
+import { ReactComponent as CartSvg } from './assets/icon-cart.svg'
 
 function App() {
   return (
@@ -16,7 +17,10 @@ function App() {
             <span className="discount-price">$149.99</span>
             <span className="original-price">$169.99</span>
           </div>
-          <button className="add-to-cart-btn">Add to cart</button>
+          <button className="add-to-cart-btn">
+            <span className="btn-svg"><CartSvg/></span>
+            <span className="btn-text">Add to cart</span>
+          </button>
         </div>
       </div>
     </>
