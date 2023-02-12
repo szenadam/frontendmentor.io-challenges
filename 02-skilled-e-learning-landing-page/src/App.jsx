@@ -1,7 +1,15 @@
 import './App.css'
+import {ReactComponent as Logo} from './assets/logo-dark.svg';
 
 function App() {
-  return (<h1>skilled-e-learning-landing-page</h1>)
+  return (
+    <>
+      <div className="header">
+        <Logo/>
+        <button>Get Started</button>
+      </div>
+    </>
+  )
 }
 
 export default App
