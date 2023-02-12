@@ -1,5 +1,6 @@
 import './App.css'
 import desktopImage from './assets/image-product-desktop.jpg'
+import mobileImage from './assets/image-product-mobile.jpg'
 import { ReactComponent as CartSvg } from './assets/icon-cart.svg'
 
 function App() {
@@ -7,7 +8,10 @@ function App() {
     <>
       <div className="card">
         <div className="card-image">
-          <img src={desktopImage} alt="Image of a cologne"/>
+          <picture>
+            <source srcSet={mobileImage} media="(max-width: 400px)"/>
+            <img src={desktopImage} alt="Image of a cologne"/>
+          </picture>
         </div>
         <div className="card-text">
           <p className="top-title">PERFUME</p>
