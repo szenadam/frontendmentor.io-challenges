@@ -42,6 +42,9 @@ jobs:
           cd 00_interactive-rating-component-main
           mkdir -p ../build/00_interactive-rating-component-main
           cp -r index.html ../build/00_interactive-rating-component-main
+          cp -r main.js ../build/00_interactive-rating-component-main
+          cp -r style.css ../build/00_interactive-rating-component-main
+          cp -r images/ ../build/00_interactive-rating-component-main
   
       - name: Install dependencies and build 01-product-preview-card-component
         run: |
