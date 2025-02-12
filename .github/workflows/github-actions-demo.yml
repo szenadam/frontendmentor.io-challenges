@@ -53,6 +53,30 @@ jobs:
           npm run build
           mkdir -p ../build/01-product-preview-card-component
           cp -r dist ../build/01-product-preview-card-component
+      
+      - name: Install dependencies and build 02-skilled-e-learning-landing-page
+        run: |
+          cd 02-skilled-e-learning-landing-page
+          npm install
+          npm run build
+          mkdir -p ../build/02-skilled-e-learning-landing-page
+          cp -r dist ../build/02-skilled-e-learning-landing-page
+
+      - name: Install dependencies and build 03-results-summary-component
+        run: |
+          cd 03-results-summary-component
+          npm install
+          npm run build
+          mkdir -p ../build/03-results-summary-component
+          cp -r dist ../build/03-results-summary-component
+      
+      - name: Install dependencies and build 04-tech-book-club-landing-page
+        run: |
+          cd 04-tech-book-club-landing-page
+          npm install
+          npm run build
+          mkdir -p ../build/04-tech-book-club-landing-page
+          cp -r dist ../build/04-tech-book-club-landing-page
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4

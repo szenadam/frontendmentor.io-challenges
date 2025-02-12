@@ -4,4 +4,5 @@ import svgr from "vite-plugin-svgr";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
+  base: 'frontendmentor.io-challenges/03-results-summary-component/dist',
 })
