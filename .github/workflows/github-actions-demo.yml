@@ -28,11 +28,10 @@ jobs:
         with:
           node-version: '22'
 
-      
-
       - name: Install dependencies and build 00_interactive-rating-component-main
         run: |
           cd 00_interactive-rating-component-main
+          mkdir -p ../build/00_interactive-rating-component-main
           cp -r index.html ../build/00_interactive-rating-component-main
   
       - name: Install dependencies and build 01-product-preview-card-component
@@ -40,4 +39,5 @@ jobs:
           cd 01-product-preview-card-component
           npm install
           npm run build
+          mkdir -p ../build/01-product-preview-card-component
           cp -r dist ../build/01-product-preview-card-component
