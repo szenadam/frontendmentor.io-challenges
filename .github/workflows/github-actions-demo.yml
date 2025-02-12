@@ -33,9 +33,7 @@ jobs:
       - name: Install dependencies and build 00_interactive-rating-component-main
         run: |
           cd 00_interactive-rating-component-main
-          npm install
-          npm run build
-          cp -r dist ../build/00_interactive-rating-component-main
+          cp -r index.html ../build/00_interactive-rating-component-main
   
       - name: Install dependencies and build 01-product-preview-card-component
         run: |
