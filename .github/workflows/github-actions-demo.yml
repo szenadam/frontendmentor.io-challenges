@@ -41,3 +41,9 @@ jobs:
           npm run build
           mkdir -p ../build/01-product-preview-card-component
           cp -r dist ../build/01-product-preview-card-component
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: build/
