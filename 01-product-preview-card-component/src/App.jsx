@@ -1,7 +1,7 @@
 import './App.css'
 import desktopImage from './assets/image-product-desktop.jpg'
 import mobileImage from './assets/image-product-mobile.jpg'
-import { ReactComponent as CartSvg } from './assets/icon-cart.svg'
+import CartSvg from './assets/icon-cart.svg?react'
 
 function App() {
   return (
