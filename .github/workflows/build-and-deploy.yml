@@ -1,4 +1,5 @@
 name: Build and deploy
+run-name: Build and deploy
 on: [push]
 permissions:
   contents: read
@@ -11,7 +12,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -30,7 +31,7 @@ jobs:
           cp -r main.js ../build/00_interactive-rating-component-main
           cp -r style.css ../build/00_interactive-rating-component-main
           cp -r images/ ../build/00_interactive-rating-component-main
-  
+
       - name: Install dependencies and build 01-product-preview-card-component
         run: |
           cd 01-product-preview-card-component
@@ -38,7 +39,7 @@ jobs:
           npm run build
           mkdir -p ../build/01-product-preview-card-component
           cp -r dist ../build/01-product-preview-card-component
-      
+
       - name: Install dependencies and build 02-skilled-e-learning-landing-page
         run: |
           cd 02-skilled-e-learning-landing-page
@@ -54,7 +55,7 @@ jobs:
           npm run build
           mkdir -p ../build/03-results-summary-component
           cp -r dist ../build/03-results-summary-component
-      
+
       - name: Install dependencies and build 04-tech-book-club-landing-page
         run: |
           cd 04-tech-book-club-landing-page
