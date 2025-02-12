@@ -1,8 +1,8 @@
 import './App.css'
-import {ReactComponent as MemorySvg} from './assets/images/icon-memory.svg';
-import {ReactComponent as ReactionSvg} from './assets/images/icon-reaction.svg';
-import {ReactComponent as VerbalSvg} from './assets/images/icon-verbal.svg';
-import {ReactComponent as VisualSvg} from './assets/images/icon-visual.svg';
+import MemorySvg from './assets/images/icon-memory.svg?react';
+import ReactionSvg from './assets/images/icon-reaction.svg?react';
+import VerbalSvg from './assets/images/icon-verbal.svg?react';
+import VisualSvg from './assets/images/icon-visual.svg?react';
 
 function App() {
 
