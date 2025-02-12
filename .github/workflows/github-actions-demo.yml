@@ -43,7 +43,7 @@ jobs:
           cp -r dist ../build/01-product-preview-card-component
 
       - name: Upload build artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: build-artifacts
           path: build/
