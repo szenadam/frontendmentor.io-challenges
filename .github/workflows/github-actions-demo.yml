@@ -28,6 +28,11 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Copy index html
+        run: |
+          mkdir -p build
+          cp -r index.html build
+
       - name: Install dependencies and build 00_interactive-rating-component-main
         run: |
           cd 00_interactive-rating-component-main
