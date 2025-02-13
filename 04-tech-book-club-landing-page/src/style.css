@@ -37,7 +37,8 @@ body {
 .header,
 .footer,
 .hero__container,
-.reading{
+.reading,
+.not-average {
   width: 80%;
   margin: auto;
 }
@@ -147,6 +148,10 @@ body {
   gap: 2.125rem;
 }
 
+.reading .reading__text h2 {
+  color: var(--neutral-900);
+}
+
 .reading .reading__text ul {
   list-style: none;
   margin-left: 0;
@@ -157,4 +162,33 @@ body {
 .reading .reading__text li {
   color: var(--neutral-700);
   list-style-image: url("$images/icon-check.svg");
+}
+
+.not-average {
+  display: flex;
+  gap: 5rem;
+}
+
+.not-average__text {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  flex: 1;
+}
+
+.not-average__text h2 {
+  margin-bottom: 1.5rem;
+  color: var(--neutral-900);
+}
+
+.not-average__text p {
+  color: var(--neutral-700);
+}
+
+.not-average__img {
+  object-fit: contain;
+  flex: 1;
+}
+
+.not-average__img img {
+  border-radius: 1rem;
 }
