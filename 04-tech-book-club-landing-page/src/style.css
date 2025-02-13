@@ -38,7 +38,8 @@ body {
 .footer,
 .hero__container,
 .reading,
-.not-average {
+.not-average,
+.tech-journey {
   width: 80%;
   margin: auto;
 }
@@ -212,4 +213,56 @@ body {
 
 .not-average__img img {
   border-radius: 1rem;
+}
+
+.tech-journey {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  background: var(--neutral-100) url("$images/pattern-light-bg.svg");
+  margin-top: 8rem;
+  padding: 5rem 3.75rem 4rem;
+  border-radius: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-journey h2 {
+  text-align: center;
+  color: var(--neutral-900);
+}
+
+.tech-journey__container {
+  display: flex;
+  gap: 3rem;
+}
+
+.tech-journey__step {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tech-journey__step__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.tech-journey__step div div {
+  width: 2rem;
+  height: 2rem;
+  align-content: center;
+  text-align: center;
+  border: 2px solid var(--neutral-900);
+  border-radius: 0.25rem;
+}
+
+.tech-journey__light {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+  z-index: 1;
 }
