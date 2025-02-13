@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Martian Mono';
   font-display: swap;
-  src: url("dist/assets/fonts/martian-mono/MartianMono-Variable.ttf") format("truetype");
+  src: url("fonts/martian-mono/MartianMono-Variable.ttf") format("truetype");
   font-style: normal;
   font-weight: 100 800;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Inter';
   font-display: swap;
-  src: url("dist/assets/fonts/inter/Inter-Variable.ttf") format("truetype");
+  src: url("fonts/inter/Inter-Variable.ttf") format("truetype");
   font-style: normal;
   font-weight: 100 900;
 }
