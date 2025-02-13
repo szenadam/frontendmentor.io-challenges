@@ -39,7 +39,8 @@ body {
 .hero__container,
 .reading,
 .not-average,
-.tech-journey {
+.tech-journey,
+.membership-options {
   width: 80%;
   margin: auto;
 }
@@ -265,4 +266,46 @@ body {
   right: 0;
   transform: translate(50%, 50%);
   z-index: 1;
+}
+
+.membership-options {
+  padding-top: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+
+.membership-options__packs {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.membership-options__pack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid var(--neutral-200);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.membership-options__pack hr {
+  border: none;
+  border-top: 1px solid var(--neutral-200);
+}
+
+.membership-options__pack ul li {
+  list-style-image: url("$images/icon-check.svg");
+  margin-bottom: 1rem;
+}
+
+.membership-options__pack__btn {
+  padding: 1rem 1rem;
+  align-self: flex-start;
+  background: var(--light-salmon-50);
+  color: var(--neutral-900);
+  display: flex;
+  gap: 1rem;
+  text-transform: uppercase;
 }
