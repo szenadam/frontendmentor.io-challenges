@@ -21,6 +21,14 @@
     letter-spacing: -2px;
 }
 
+.text-2 {
+  font-size: 50px;
+  font-family: "Martian Mono", monospace;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -2px;
+}
+
 .text-5 {
     font-family: Inter, sans-serif;
     font-size: 20px;

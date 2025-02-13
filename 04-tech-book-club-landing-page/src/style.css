@@ -36,7 +36,8 @@ body {
 
 .header,
 .footer,
-.hero__container {
+.hero__container,
+.reading{
   width: 80%;
   margin: auto;
 }
@@ -48,7 +49,7 @@ body {
 .hero__container {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 5rem;
   padding-top: 2rem;
   padding-bottom: 4rem;
 }
@@ -120,4 +121,40 @@ body {
   right: 0;
   transform: translate(50%, 50%);
   z-index: 1;
+}
+
+.reading {
+  display: flex;
+  gap: 5rem;
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.reading .reading__img {
+  object-fit: contain;
+  flex: 1;
+}
+
+.reading .reading__img img {
+  border-radius: 1rem;
+}
+
+.reading .reading__text {
+  padding-top: 2.75rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+}
+
+.reading .reading__text ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* TODO: Fix list marker and text vertical alignment */
+.reading .reading__text li {
+  color: var(--neutral-700);
+  list-style-image: url("dist/assets/images/icon-check.svg");
 }
