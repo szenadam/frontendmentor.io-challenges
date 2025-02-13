@@ -55,7 +55,7 @@ body {
 }
 
 .hero {
-  background: var(--neutral-100) url("dist/assets/images/pattern-light-bg.svg");
+  background: var(--neutral-100) url("images/pattern-light-bg.svg");
   position: relative;
   overflow: hidden;
 }
@@ -156,5 +156,5 @@ body {
 /* TODO: Fix list marker and text vertical alignment */
 .reading .reading__text li {
   color: var(--neutral-700);
-  list-style-image: url("dist/assets/images/icon-check.svg");
+  list-style-image: url("images/icon-check.svg");
 }
