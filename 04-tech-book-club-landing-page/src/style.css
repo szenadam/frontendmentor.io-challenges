@@ -40,7 +40,8 @@ body {
 .reading,
 .not-average,
 .tech-journey,
-.membership-options {
+.membership-options,
+.personal-testimony {
   width: 80%;
   margin: auto;
 }
@@ -308,4 +309,21 @@ body {
   display: flex;
   gap: 1rem;
   text-transform: uppercase;
+}
+
+.personal-testimony {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7.5rem
+}
+
+.personal-testimony__social-stars{
+  display: flex;
+}
+
+.personal-testimony p {
+  width: 60rem;
+  text-align: center;
 }
