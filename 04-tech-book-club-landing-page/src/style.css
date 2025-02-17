@@ -41,7 +41,8 @@ body {
 .not-average,
 .tech-journey,
 .membership-options,
-.personal-testimony {
+.personal-testimony,
+.footer {
   width: 80%;
   margin: auto;
 }
@@ -326,4 +327,85 @@ body {
 .personal-testimony p {
   width: 60rem;
   text-align: center;
+}
+
+.footer {
+  background-color: var(--neutral-900);
+  color: var(--neutral-100);
+  margin-top: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 5rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.footer h2 {
+  width: 47rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.footer__btn {
+  background-color: var(--neutral-900);
+  color: var(--neutral-100);
+  border: 2px solid var(--neutral-0);
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer__btn img {
+  display: inline-block;
+}
+
+.footer__testimonial {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.footer__testimonial__avatars img {
+  height: 3rem;
+}
+
+.footer__social-stars {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.footer hr {
+  border: none;
+  width: 80%;
+  border-top: 1px solid var(--neutral-700);
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+
+}
+
+.footer__copyright div {
+  color: var(--neutral-100);
+}
+
+.footer__copyright__icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer__copyright__icons img {
+  width: 22px;
+  height: 22px;
 }
