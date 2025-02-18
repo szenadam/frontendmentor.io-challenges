@@ -289,12 +289,30 @@ body {
 }
 
 .membership-options__pack {
+  width: 18rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   border: 1px solid var(--neutral-200);
   border-radius: 0.5rem;
   padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.membership-options__pro {
+  background-color: var(--neutral-100);
+  width: 22rem;
+}
+
+/* TODO: Not too good. */
+/* Maybe use background-color and background-image properties on the parent */
+.membership-options__light {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+  z-index: 1;
 }
 
 .membership-options__pack hr {
