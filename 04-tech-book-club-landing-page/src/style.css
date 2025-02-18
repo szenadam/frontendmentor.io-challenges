@@ -162,10 +162,16 @@ body {
   padding-left: 0;
 }
 
-/* TODO: Fix list marker and text vertical alignment */
-.reading .reading__text li {
+.reading__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   color: var(--neutral-700);
-  list-style-image: url("$images/icon-check.svg");
+}
+
+.reading__item {
+  display: flex;
+  gap: 0.875rem;
 }
 
 .not-average {
