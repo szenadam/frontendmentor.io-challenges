@@ -284,12 +284,13 @@ body {
 }
 
 .membership-options__packs {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
   gap: 1.5rem;
+  align-items: center;
 }
 
 .membership-options__pack {
-  width: 18rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -301,8 +302,24 @@ body {
 }
 
 .membership-options__pro {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   background-color: var(--neutral-100);
-  width: 22rem;
+  /*background-image: url("$images/pattern-glow.svg");*/
+  /*transform: translate(-50%, -50%);*/
+}
+
+.membership-options__pro:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 684px;
+  height: 684px;
+  /* bottom: -464px; */
+  /* right: -240px; */
+  background-image: url("$images/pattern-glow.svg");
+  background-size: 684px 684px;
+  background-repeat: no-repeat;
 }
 
 /* TODO: Not too good. */
@@ -327,10 +344,11 @@ body {
 
 .membership-options__pack__btn {
   padding: 1rem 1rem;
-  align-self: flex-start;
+  align-self: normal;
   background: var(--light-salmon-50);
   color: var(--neutral-900);
   display: flex;
+  justify-content: center;
   gap: 1rem;
   text-transform: uppercase;
 }
